@@ -1,0 +1,121 @@
+@import map-get
+@import common
++exports("amc_custom_horizontal_article")
+	.amc_custom_horizontal_article
+		@extend .clear-float
+		.wrapper
+			overflow: hidden
+			position: relative
+			.detail-wrap
+				height: 0
+				opacity: 0
+				background-color: #fff
+				position: relative
+				width: 100%
+				float: left
+				*
+					opacity: 0
+				@extend .transition-effect
+				&.active
+					opacity: 1
+					padding: 30px
+					padding-top: 0
+					width: 100%
+					position: relative
+					height: auto
+					*
+						opacity: 1
+						margin-top: 0
+						margin-bottom: 0
+					.tick
+						height: 10px
+						background-color: map-get($amaris-color-hot,1)
+						padding-right: 0
+						padding-left: 0
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6
+						background-color: #eee
+						padding-left: 30px
+						padding-right: 30px
+					p
+						@extend .clear-float
+						background-color: #eee
+						padding-top: 30px
+						padding-left: 30px
+						padding-right: 30px
+						padding-bottom: 30px
+			.block
+				position: relative
+				height: 500px
+				overflow: hidden
+				padding-left: 0
+				padding-right: 0
+				img
+					width: 100%
+					@extend .god-center
+				.content-wrap
+					background-color: transparent
+					padding: 30px
+					width: 100%
+					height: 100%
+					z-index: 1
+					position: absolute
+					border-bottom: 30px solid #fff
+					.wrap-center
+						background-color: rgba(white, 0.8)
+						width: 300px
+						height: 300px
+						padding: 15px
+						overflow: hidden
+						opacity: 0
+						@extend .god-center
+						// &.hide_left
+						// 	left: -100%
+						// 	@extend .transition-effect
+						// 	&:hover
+						// 		left: 50%
+						// 		opacity: 1
+						// &.hide_right
+						// 	right: -100%
+						// 	@extend .transition-effect
+						// 	&:hover
+						// 		right: inherit
+						// 		opacity: 1
+						// &.hide_top
+						// 	top: -100%
+						// 	@extend .transition-effect
+						// 	&:hover
+						// 		top: 50%
+						// 		opacity: 1
+						// &.hide_bottom
+						// 	bottom: -100%
+						// 	@extend .transition-effect
+						// 	&:hover
+						// 		bottom: inherit
+						// 		opacity: 1
+						p
+							font-size: 11pt
+							margin-top: 0
+							margin-bottom: 0
+				&.left
+					border-left: 30px solid #fff
+					border-right: 30px solid #fff
+					.content-wrap
+				&.right
+					border-right: 30px solid #fff
+				&.center
+					border-left: none
+					border-right: 30px solid #fff
+				&.active
+					.content-wrap
+						border-bottom: 30px solid #eee
+			&.opposite
+				.left
+					.content-wrap
+						p
+
+						

@@ -1,0 +1,24 @@
+@import map-get
+@import common
++exports("amc_search_bar")
+	.sear-bar
+		position: relative
+		@extend .clear-float
+		margin-bottom: 15px
+		margin-top: 18px
+		input[type="text"]
+			padding: 7px 15px
+			width: 75%
+			float: left
+		.sear-btn
+			width: 25%
+			text-align: center
+			display: block
+			text-transform: capitalize
+			color: #fff
+			
+			padding: 7px 15px
+			background-color: map-get($amaris-color-hot,2)
+			float: left
+			&:hover
+				text-decoration: none

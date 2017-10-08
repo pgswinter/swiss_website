@@ -1,0 +1,205 @@
+@import map-get
+@import common
+@import responsive
++exports("amc_navigation")
+    body    
+        header
+            position: fixed
+            width: 100%
+            .head-wrap
+                position: relative
+                width: 100%
+
+                .top-head
+                    background-color: transparent
+
+                    // background-color: rgba(255,255,255,0.8)
+                    > .col-lg-4
+                        margin: 0 auto
+
+                        a
+                            // width: 35%
+                            display: block
+                            margin: 0 auto
+
+                            img
+                                width: 100%
+            .sect-amar
+                background-color: rgba(69, 69, 71, 0.8)
+
+                ul
+                    height: 86px
+                    float: left
+                    width: 100%
+
+                    li
+                        height: 96px
+                        position: relative
+                        float: left
+
+                        &.active
+                            color: map-get($amaris-color-hot, 2)
+
+                        a
+                            padding: 15px 0
+                            display: block
+                            height: 100%
+                            width: 100%
+                            background-repeat: no-repeat
+                            background-position: center 30%
+                            background-size: 45%
+                            text-decoration: none
+                            transition: all 300ms ease
+                            -webkit-transition: all 300ms ease
+                            -moz-transition: all 300ms ease
+                            -ms-transition: all 300ms ease
+
+                            img
+                                text-align: center
+                                width: 50%
+                                display: block
+                                margin: 0 auto
+                                color: map-get($amaris-color-hot, 2)
+
+                            label
+                                display: none
+                                text-transform: uppercase
+                                margin-bottom: 0
+                                margin-top: 10px
+
+                            &:hover
+                                background-position: center 30%
+
+                        &:hover
+                            label
+                                display: block
+                                color: map-get($amaris-color-hot, 2)
+                                text-align: center
+                                text-decoration: none
+                                position: absolute
+                                bottom: 0
+                                
+                                font-size: 9pt
+                                width: 100px
+                                margin-right: auto
+                                margin-left: auto
+                                margin-bottom: 0
+                                margin-top: 0
+                                bottom: 5px
+                                left: 0
+                                right: 0
+
+                        &:nth-child(1)
+                            a
+                                background-image: url(../../imgs/03.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/03_hover.png)
+
+                        &:nth-child(2)
+                            a
+                                background-image: url(../../imgs/04.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/04_hover.png)
+
+                        &:nth-child(3)
+                            a
+                                background-image: url(../../imgs/05.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/05_hover.png)
+
+                        &:nth-child(4)
+                            a
+                                background-image: url(../../imgs/06.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/06_hover.png)
+
+                        &:nth-child(5)
+                            a
+                                background-image: url(../../imgs/07.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/07_hover.png)
+
+                        &:nth-child(6)
+                            a
+                                background-image: url(../../imgs/01.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/01_hover.png)
+
+                        &:nth-child(7)
+                            a
+                                background-image: url(../../imgs/12.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/12_hover.png)
+
+                        &:nth-child(8)
+                            a
+                                background-image: url(../../imgs/08.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/08_hover.png)
+
+                        &:nth-child(9)
+                            a
+                                background-image: url(../../imgs/09.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/09_hover.png)
+
+                        &:nth-child(10)
+                            a
+                                background-image: url(../../imgs/02.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/02_hover.png)
+
+                        &:nth-child(11)
+                            a
+                                background-image: url(../../imgs/11.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/11_hover.png)
+
+                        &:nth-child(12)
+                            a
+                                background-image: url(../../imgs/10.png)
+
+                                &:hover
+                                    background-image: url(../../imgs/10_hover.png)
+
+                &.abou-us
+                    ul
+                        float: left
+                        width: 100%
+
+                        li
+                            float: left
+                            height: 100%
+
+                            a
+                                float: left
+                                background-image: none !important
+                                padding: 0
+
+                                span
+                                    color: #fff
+                                    text-align: center
+                                    
+                                    font-size: 14pt
+                                    display: block
+                                    vertical-align: middle
+                                    margin-top: 43px
+                                    -ms-transform: translateX(0) translateY(-50%)
+                                    -webkit-transform: translate(0, -50%)
+                                    transform: translate(0, -50%)
+
+                            &.active
+                                a
+                                    span
+                                        color: map-get($amaris-color-hot, 2)

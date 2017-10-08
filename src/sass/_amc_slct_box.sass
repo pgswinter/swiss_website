@@ -1,0 +1,22 @@
+@import map-get
+@import common
++exports("amc_slct_box")
+	.slct-box
+		padding-left: 0
+		padding-right: 0
+		position: relative
+		z-index: 1
+		:after
+			display: block
+			content: ''
+			clear: both
+		.bar
+			width: 100%
+		.expa-btn
+			position: absolute
+			right: 0
+			top: 0
+			cursor: pointer
+		.list-item
+			z-index: 2
+			cursor: pointer

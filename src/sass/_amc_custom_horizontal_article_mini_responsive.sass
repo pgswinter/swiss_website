@@ -1,0 +1,98 @@
+@import map-get
+@import responsive_for_all
++exports("amc_custom_horizontal_article_mini_responsive")
+	// Large Screen
+	@media #{$amc-max-2560}
+	@media #{$amc-max-2560-landscape}
+	@media #{$amc-max-2560-portrait}
+	
+	@media #{$amc-max-1920}
+	@media #{$amc-max-1920-landscape}
+	@media #{$amc-max-1920-portrait}
+	
+	@media #{$amc-max-1600}
+	@media #{$amc-max-1600-portrait}
+	// Medium Screen
+	@media #{$amc-max-1366}
+	@media #{$amc-max-1366-landscape}
+	@media #{$amc-max-1366-portrait}
+	
+	@media #{$amc-min-1025}
+	@media #{$amc-max-1024}
+		.amc_custom_horizontal_article
+			.wrapper
+				.block
+					height: auto
+					overflow: visible
+					width: 100%
+					img
+						display: block
+						width: 100%
+						position: relative
+						top: 0
+						left: 0
+						transform: translate(0, 0)
+						-webkit-transform: translate(0, 0)
+						-o-transform: translate(0, 0)
+						-ms-transform: translate(0, 0)
+						-moz-transform: translate(0, 0)
+					&.right,
+					&.center
+						border-left: 30px solid transparent
+					.img-wrap-cent
+						img
+					.content-wrap
+						position: relative
+						padding: 0
+						border-bottom: 0 !important
+						margin-top: 15px
+						margin-bottom: 15px
+						overflow: hidden
+						.wrap-center
+							padding: 0
+							height: auto
+							width: 100%
+							position: relative
+							top: 0
+							left: 0
+							transform: translate(0, 0)
+							-webkit-transform: translate(0, 0)
+							-o-transform: translate(0, 0)
+							-ms-transform: translate(0, 0)
+							-moz-transform: translate(0, 0)
+							opacity: 1
+					&.active
+						display: block
+				.detail-wrap
+					float: none
+					height: auto
+					opacity: 1
+					padding: 30px
+					padding-top: 0
+					overflow: hidden
+					*
+						padding: 30px
+						opacity: 1
+						margin-top: 0
+						background-color: #eee
+						overflow: hidden
+					&.active
+						margin-bottom: 15px
+						*
+							margin-top: 0
+							overflow: hidden
+	@media #{$amc-max-1024-landscape}
+	@media #{$amc-max-1024-portrait}
+
+	// Small Screen
+	@media #{$amc-max-768}
+	@media #{$amc-max-768-landscape}
+	@media #{$amc-max-768-portrait}
+	
+	@media #{$amc-max-568}
+	@media #{$amc-max-568-landscape}
+	@media #{$amc-max-568-portrait}
+	// extra small Screen
+	@media #{$amc-max-320}
+	@media #{$amc-max-320-landscape}
+	@media #{$amc-max-320-portrait}

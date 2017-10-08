@@ -1,0 +1,144 @@
+@import map-get
+@import common
++exports("amc_landscape_scrolling")
+	form[action="./governance-v2"],
+	form[action="./inspire"]
+		width: inherit
+		height: inherit
+		.body-content
+			width: inherit
+			height: inherit
+	.amc-land-srll
+		height: 100%
+		.item-land-srll
+			float: left
+			display: block
+			height: 100%
+			margin: 0
+			overflow: hidden
+			position: relative
+			.wrap-item
+				width: 100%
+				height: 100%
+				.text-bottom
+					
+					position: absolute
+					left: 50px
+					bottom: 10px
+					color: #000
+					font-style: italic
+				.left-corner,
+				.right-corner
+					width: 10em
+					height: 10em
+					position: absolute
+					top: 200px
+					left: 50px
+					border: 10px solid #fff
+					text-align: left
+					color: #fff
+					padding: 10px
+					padding-top: 5em
+					z-index: 1
+					
+					span
+						&:last-child
+							color: rgba(white, 0.69)
+							
+				.right-corner
+					width: 12em
+					height: 6.5em
+					padding: 0 0
+					padding-top: 15px
+					padding-left: 17px
+					border: 10px solid #ed7d31
+					color: #fff
+					left: auto
+					right: 50px
+					background-color: rgba(239,139,27,.35)
+					span
+						&:last-child
+							color: rgba(255,255,255,.69)
+				.corner
+					width: 10em
+					height: 5em
+					position: absolute
+					top: 200px
+					right: 80px
+					border: 10px solid rgba(#ed7d31, 0.35)
+					z-index: 1
+					padding: 5px
+					color: #fff
+					background-color: #ed7d31
+					span
+						width: 100%
+						display: block
+						&:last-child
+							color: rgba(white, 0.69)
+				.img-wrap-cent
+					overflow: hidden
+				article
+					width: calc( 50% - 80px )
+					height: 33.33%
+					background-color: rgba(white, 0.4)
+					position: absolute
+					right: 50px
+					bottom: 50px
+					cursor: pointer
+					@extend .transition-effect
+					&:hover
+						background-color: #fff
+					&.full
+						width: calc(100% - 100px)
+						height: 20%
+					&.left
+						left: 50px
+					&.oran
+						background-color: rgba(map-get($amaris-color-hot,2), 0.35)
+						color: rgba(white, 0.69)
+						@extend .transition-effect
+						cursor: pointer
+						&:hover
+							background-color: rgba(map-get($amaris-color-hot,2), 1)
+						.aside
+							h1,
+							h2,
+							h3,
+							h4,
+							h5,
+							h6
+								color: #fff
+							h2
+								font-size: 30px
+					.aside
+						width: 70%
+						@extend .set-cent-vert
+						@extend .set-cent-abs
+						h1,
+						h2,
+						h3,
+						h4,
+						h5,
+						h6
+							color: map-get($amaris-color-hot,2)
+							
+							font-weight: 100
+							padding-top: 0
+							text-align: center
+							.up
+								text-transform: uppercase
+						p
+							font-size: 13pt
+							text-align: center
+						a
+							@extend .classic-btn
+							box-shadow: none
+							width: 250px
+							background-color: #fff
+							border: none
+							color: map-get($amaris-color-hot,2)
+							&:hover
+								border: none
+
+						
+				

@@ -1,0 +1,226 @@
+@import map-get
+@import common
++exports("amc_expertise")
+	.amc-expertise
+		width: 100%
+		position: relative
+		@extend .clear-float
+		.title
+			p
+				span
+					color: map-get($amaris-color-hot,2)
+		h1
+			font-size: 36pt
+			padding: 20px 0
+		ol
+			li
+				list-style-type: disc
+		.img-wrap
+			&.center
+				img
+					width: auto
+					display: block
+					margin: 0 auto
+				p
+					text-align: center
+		&.special-bio-pha
+			.the_devide
+				.item
+					.border-wrapper
+						position: relative
+						i
+							display: none
+					.img-wrap
+						p
+							text-align: center
+					p
+						text-align: center
+				&.summary,
+				&.summary2,
+				&.content
+					.item
+						// opacity: 0.35
+						opacity: 1
+						&:hover,
+						.active
+							opacity: 1
+				&.summary2
+					.item
+					.content-wrapper
+						p,
+						ol,
+						li
+							width: 100%
+							span
+								color: map-get($amaris-color-hot,2)
+						p
+							font-weight: bold
+						ol
+							li
+								list-style-type: disc
+				&.summary,
+				&.summary2
+					margin-bottom: 30px
+					.item
+						&.summary
+							cursor: pointer
+							box-sizing: border-box
+							-moz-box-sizing: border-box
+							-webkit-box-sizing: border-box
+							@extend .transition-effect
+							.content-wrapper
+								display: none
+							.border-wrapper
+								@extend .transition-effect
+								border: 2px solid transparent
+							&:hover,
+							&.active
+								opacity: 1
+								.border-wrapper
+									border: 2px solid map-get($amaris-color-hot,2)
+									margin-bottom: 30px
+					.content-wrapper
+						float: left
+						width: 100%
+						position: relative
+						p
+							span
+								color: map-get($amaris-color-hot,2)
+						.the_devide
+							&.content
+								.item
+									border-bottom: 2px solid transparent
+									@extend .transition-effect
+									&.content
+										.article-wrap
+											display: none
+									&:hover,
+									&.active
+										border-bottom: 2px solid map-get($amaris-color-hot,2)
+										opacity: 1
+									&.active
+										margin-bottom: 30px
+								.article-wrap
+									float: left
+									display: block
+									position: relative
+									width: 100%
+									p
+										color: #fff
+									h2
+										color: #555
+									.text-wrapper
+										padding: 20px
+										background-color: map-get($amaris-color-hot,2)
+										color: #fff
+										ol
+											padding-left: 15px
+											li
+												list-style-type: disc
+												ol
+													padding-left: 15px
+													li
+														list-style-type: circle
+									.img-wrap
+										&.center
+											img
+												width: auto
+												display: block
+												margin: 0 auto
+											p
+												text-align: center
+									.the_devide
+										&.lv3
+											width: 100%
+											.item
+												opacity: 1
+												position: relative
+												&:after
+													content: ''
+													display: block
+													width: 90%
+													height: 2px
+													bottom: 0
+													@extend .set-cent-horizon
+													background-color: map-get($amaris-color-hot,2)
+												p
+													margin-top: 36px
+
+
+				&.title
+					.item
+						position: relative
+						// &:after
+						// 	content: ''
+						// 	display: block
+						// 	position: absolute
+						// 	bottom: 0
+						// 	height: 2px
+						// 	width: 90%
+						// 	background-color: map-get($amaris-color-hot,2)
+						// 	@extend .set-cent-horizon
+						.img-wrap
+						p
+							text-align: center
+				.item
+					min-height: 195px
+					.img-wrap
+						img
+							width: 50%
+		.devideMe,
+		.the_devide
+			@extend .clear-float
+			width: 100%
+			box-sizing: border-box
+			-moz-box-sizing: border-box
+			-webkit-box-sizing: border-box
+			&.summary,
+			&.summary2
+				.item
+					cursor: pointer
+			.item
+				@extend .clear-pd-horiz
+				float: left
+				text-align: center
+				box-sizing: border-box
+				-moz-box-sizing: border-box
+				-webkit-box-sizing: border-box
+				.img-wrap-vert
+					height: 120px
+					overflow: hidden
+				> div
+					float: none
+					margin: 0 auto
+				.titl-exp
+					line-height: 1.2
+					border-bottom: 2px solid map-get($amaris-color-hot,1)
+					padding-bottom: 15px
+					margin-bottom: 15px
+					height: 45px
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6
+						text-align: center
+						
+						font-weight: bold
+						overflow: hidden
+				.grdn-colo
+					// background: rgba(224,222,224,1)
+					// background: -moz-linear-gradient(top, rgba(224,222,224,1) 0%, rgba(254,254,254,1) 100%)
+					// background: -webkit-gradient(left top, left bottom, colo-stop(0%, rgba(224,222,224,1)), color-stop(100%, rgba(254,254,254,1)))
+					// background: -webkit-linear-gradient(top, rgba(224,222,224,1) 0%, rgba(254,254,254,1) 100%)
+					// background: -o-linear-gradient(top, rgba(224,222,224,1) 0%, rgba(254,254,254,1) 100%)
+					// background: -ms-linear-gradient(top, rgba(224,222,224,1) 0%, rgba(254,254,254,1) 100%)
+					// background: linear-gradient(to bottom, rgba(224,222,224,1) 0%, rgba(254,254,254,1) 100%)
+					// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0dee0', endColorstr='#fefefe', GradientType=0 )
+					background-color: #fff
+					padding: 10px
+					p
+						padding-bottom: 15px
+						margin-top: 0
+					ul
+						li
+							list-style-type: disc

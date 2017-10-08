@@ -1,0 +1,327 @@
+@import map-get
+@import responsive_for_all
++exports("amc_expertise_mini_responsive")
+	// Large Screen
+	@media #{$amc-max-2560}
+	@media #{$amc-max-2560-landscape}
+	@media #{$amc-max-2560-portrait}
+	
+	@media #{$amc-max-1920}
+	@media #{$amc-max-1920-landscape}
+	@media #{$amc-max-1920-portrait}
+	
+	@media #{$amc-max-1600}
+	@media #{$amc-max-1600-landscape}
+	@media #{$amc-max-1600-portrait}
+	// Medium Screen
+	@media #{$amc-max-1366}
+	@media #{$amc-max-1366-landscape}
+	@media #{$amc-max-1366-portrait}
+
+	@media #{$amc-min-1025}
+	@media #{$amc-max-1024}
+		.amc-expertise
+			&.special-bio-pha
+				ol
+					padding-left: 15px
+					padding-right: 15px
+					li
+						list-style-type: disc
+						ol
+							li
+								list-style-type: circle !important
+					ol
+						li
+							list-style-type: circle !important	
+				.the_devide
+					.item
+						min-height: 65px
+						&.title-template
+							.border-wrapper
+								&:before
+									display: block
+									content: ''
+									clear: both
+								&:after
+									display: block
+									content: ''
+									clear: both
+								.img-wrap
+									&:before
+										display: block
+										content: ''
+										clear: both
+									&:after
+										display: block
+										content: ''
+										clear: both
+									img
+										width: 20%
+										float: left
+									p
+										width: 80%
+										margin-top: 0
+										margin-bottom: 0
+										float: left
+										line-height: 4.5
+										font-size: 3rem
+										text-align: left
+										padding-left: 1em
+								i
+									font-size: 3rem
+									color: #000
+									position: absolute
+									right: 5px
+									top: 5px
+									line-height: 4
+									&.fa-chevron-up
+										display: none
+									&.fa-chevron-down
+										display: block
+							&.active
+								.border-wrapper
+									i
+										&.fa-chevron-up
+											display: block
+										&.fa-chevron-down
+											display: none
+										color: map-get($amaris-color-hot,2)
+						&.content
+							&:last-child
+								border-bottom: 2px solid map-get($amaris-color-hot,2)
+								margin-bottom: 30px
+					&.content
+						.wasMoved
+							margin-bottom: 30px
+			.expand-title,
+			.expand-wrap
+				text-align: center
+				&:before
+					display: block
+					content: ''
+					clear: both
+				&:after
+					display: block
+					content: ''
+					clear: both
+			.expand-title
+				.item
+					border: 1px solid #eee
+					border-bottom: none
+					border-left: map-get($amaris-color-hot,1)
+					background-color: map-get($amaris-color-hot,1)
+					color: #eee
+			.expand-wrap
+				position: relative
+				.title
+					h1,
+					h2,
+					h4,
+					h4,
+					h5,
+					h6
+						padding: 1rem 0
+						margin: 0 0
+						background-color: map-get($amaris-color-hot,2)
+						color: #fff
+						display: block !important
+					i
+						position: absolute
+						left: 1em
+						top: 1.25rem
+						font-size: 2em
+						color: #fff
+				.content
+					height: 0
+					transition: all 300ms ease
+					-webkit-transition: all 300ms ease
+					-moz-transition: all 300ms ease
+					-ms-transition: all 300ms ease
+					[class*="col-"],
+					[class^="col-"]
+						padding-left: 0
+						padding-right: 0
+						.block
+							padding-top: 2rem
+							border: 1px solid #eee
+							border-top: none
+					*
+						display: none
+				&.active
+					.content
+						transition: all 300ms ease
+						height: 100%
+						*
+							display: block
+	@media #{$amc-max-1024-landscape}
+		.amc-expertise
+			.devideMe
+				.item
+					width: 50%
+					min-height: 800px
+			.expand-title
+	@media #{$amc-max-1024-portrait}
+		.amc-expertise
+			.devideMe
+				.item
+					width: 100%
+					.grdn-colo
+						ul
+							li
+								font-size: 2rem
+								text-align: center
+	// Small Screen
+	@media #{$amc-max-768}
+		.amc-expertise
+			&.special-bio-pha
+				ol
+					li
+						ol
+							li
+					ol
+						li
+				.the_devide
+					.item
+						&.title-template
+							.border-wrapper
+								&:before
+								&:after
+								.img-wrap
+									img
+								p
+									font-size: 1em
+									line-height: 4.5
+								i
+									font-size: 2em
+									line-height: 4
+									&.fa-chevron-up
+									&.fa-chevron-down
+							&.active
+								.border-wrapper
+									i
+						&.content
+							&:last-child
+					&.content
+						.wasMoved
+	@media #{$amc-max-768-landscape}
+		.amc-expertise
+			.devideMe
+				.item
+					width: 100%
+	@media #{$amc-max-768-portrait}
+		.amc-expertise
+			&.special-bio-pha
+				ol
+					li
+						ol
+							li
+					ol
+						li
+				.the_devide
+					.item
+						&.title-template
+							.border-wrapper
+								&:before
+								&:after
+								.img-wrap
+									img
+								p
+									font-size: 2em
+								i
+									font-size: 2em
+									&.fa-chevron-up
+									&.fa-chevron-down
+							&.active
+								.border-wrapper
+									i
+						&.content
+							&:last-child
+					&.content
+						.wasMoved
+	@media #{$amc-max-568}
+	@media #{$amc-max-568-landscape}
+	@media #{$amc-max-568-portrait}
+		.amc-expertise
+			.expand-title,
+			.expand-wrap
+			.expand-title
+				.item
+			.expand-wrap
+				.title
+					h1,
+					h2,
+					h4,
+					h4,
+					h5,
+					h6
+					i
+						display: none
+				.content
+					[class*="col-"],
+					[class^="col-"]
+						.block
+					*
+				&.active
+					.content
+			&.special-bio-pha
+				ol
+					li
+						ol
+							li
+					ol
+						li
+				.the_devide
+					.item
+						&.title-template
+							.border-wrapper
+								&:before
+								&:after
+								.img-wrap
+									img
+									p
+										font-size: 2rem
+										line-height: 4
+								i
+									line-height: 2
+	// extra small Screen
+	@media #{$amc-max-320}
+		.amc-expertise
+			&.special-bio-pha
+				ol
+					li
+						ol
+							li
+					ol
+						li
+				.the_devide
+					.item
+						&.title-template
+							.border-wrapper
+								&:before
+								&:after
+								.img-wrap
+									img
+									p
+										font-size: 1.5rem
+										line-height: 3.5
+								i
+									line-height: 1.5
+									&.fa-chevron-up
+									&.fa-chevron-down
+							&.active
+								.border-wrapper
+									i
+						&.content
+							&:last-child
+					&.content
+						.wasMoved
+	@media #{$amc-max-320-landscape}
+	@media #{$amc-max-320-portrait}
+
+
+
+
+
+
+
+					

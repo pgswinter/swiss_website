@@ -1,0 +1,51 @@
+@import map-get
+@import common
++exports("amc_article_img")
+	.amc-article-img
+		@extend .clear-pd-horiz
+		cursor: pointer
+		height: 270px
+		overflow: hidden
+		float: left
+		position: relative
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6
+			text-align: center
+			padding-bottom: 15px
+			margin-bottom: 15px
+			font-weight: bold
+			z-index: 1
+			text-align: center
+			display: block
+			width: 100%
+			@extend .set-cent-vert
+			@extend .transition-effect
+			visibility: hidden
+			color: #fff
+		&:after
+			position: absolute
+			display: block
+			content: ''
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			@extend .transition-effect
+		&:hover
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6
+				visibility: visible
+			&:after
+				visibility: visible
+				background-color: rgba(239, 139, 27, 0.69)
+		.img-wrap
+			height: 100%
+			width: 100%

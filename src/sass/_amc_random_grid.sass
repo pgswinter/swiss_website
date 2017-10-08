@@ -1,0 +1,35 @@
+@import map-get
+@import common
++exports("amc_random_grid")
+	.amc_random_grid
+		.grid-sizer,
+		.grid-item
+			width: 20%
+			height: 300px
+			overflow: hidden
+			margin-top: 20px
+			margin-bottom: 20px
+			margin-left: 2.5%
+			margin-right: 2.5%
+			padding: 20px
+			p
+				width: 100%
+				height: 100%
+				text-align: justify
+				position: relative
+				z-index: 1
+				background-color: rgba(white, 0.8)
+				padding: 15px
+			&.grid-item--width2
+				width: 70%
+				p
+					width: 300px
+					height: 150px
+					position: absolute
+					right: 20px
+					top: 20px
+			img
+				display: none
+			.bg-white
+				@extend .bg-white
+				opacity: 0.7

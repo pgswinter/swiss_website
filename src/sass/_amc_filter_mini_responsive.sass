@@ -1,0 +1,100 @@
+@import map-get
+@import responsive_for_all
++exports("amc_filter_mini_responsive")
+	// Large Screen
+	@media #{$amc-max-2560}
+	@media #{$amc-max-2560-landscape}
+	@media #{$amc-max-2560-portrait}
+	
+	@media #{$amc-max-1920}
+	@media #{$amc-max-1920-landscape}
+	@media #{$amc-max-1920-portrait}
+	
+	@media #{$amc-max-1600}
+	@media #{$amc-max-1600-landscape}
+	@media #{$amc-max-1600-portrait}
+	// Medium Screen
+	@media #{$amc-max-1366}
+	@media #{$amc-max-1366-landscape}
+	@media #{$amc-max-1366-portrait}
+
+	@media #{$amc-min-1024}
+		.filter-mobile,
+		.toggle-filter
+			display: none
+	@media #{$amc-max-1024}
+		.filter
+			display: none
+		span
+			&.toggle-filter
+				position: fixed
+				text-align: center
+				right: -50px
+				top: 16.60em
+				border: 1px solid #cdcdcd
+				width: 124px
+				text-transform: uppercase
+				-ms-transform: rotate(-90deg) /* IE 9 */
+				-webkit-transform: rotate(-90deg) /* Safari */
+				-ms-transform: rotate(-90deg) 
+				transform: rotate(-90deg)
+				background-color: #fff
+				color: map-get($amaris-color-hot,2)
+				display: block
+				vertical-align: middle
+				border: 1px solid map-get($amaris-color-hot,2)
+				z-index: 3
+				&.enable
+					right: 169px
+		.filter-mobile
+			display: block
+			width: 220px
+			position: fixed
+			top: 13em
+			right: -65%
+			z-index: 2
+			cursor: pointer
+			&:before
+				display: block
+				content: ''
+				clear: both
+			&:after
+				display: block
+				content: ''
+				clear: both	
+			.filter
+				width: 100%
+				display: block
+				.selector-div
+					.list
+						.item
+							background-color: #fff
+							color: #555
+							&.active,
+							&.check,
+							&.focus,
+							&.visited
+								color: #fff
+								background-color: map-get($amaris-color-hot,2)
+	@media #{$amc-max-1024-landscape}
+	@media #{$amc-max-1024-portrait}
+	// Small Screen
+	@media #{$amc-max-768}
+	@media #{$amc-max-768-landscape}
+	@media #{$amc-max-768-portrait}
+		
+	@media #{$amc-max-568}
+	@media #{$amc-max-568-landscape}
+	@media #{$amc-max-568-portrait}
+	// extra small Screen
+	@media #{$amc-max-320}
+	@media #{$amc-max-320-landscape}
+	@media #{$amc-max-320-portrait}
+
+
+
+
+
+
+
+					

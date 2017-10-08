@@ -1,0 +1,916 @@
+@import map-get
+@import responsive
++exports("amc_responsive")
+	@media #{$asc-min-850}
+		body
+			.container-small
+				width: 100%
+	@media #{$asc-min-1025}
+		.for-mobi
+			display: none !important
+		.none-mobi
+			display: block
+		body
+			.body-content
+				section
+					&.mobi-oran
+						height: calc(100vh*4/5)
+
+			header
+				.sect-amar
+					margin-top: 0
+					top: 0
+			.menu-btn
+				&.acti-hove
+			.menu-left
+				
+			.detail-article
+				&.normal
+					.titl-head
+						.cover-img
+							width: 100%
+							// height: 850px
+							overflow: hidden
+							position: relative
+	@media #{$asc-min-1200}
+		body
+			.container
+				width: 1170px
+
+	@media #{$asc-min-1688}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: calc(100vh*7/8)
+						article
+							height: 20%
+							width: 13%
+	@media #{$asc-max-1780}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						article
+							height: 20%
+							width: 15%
+							.caro-wrap
+								width: 50%
+					&.abou-amar
+						article
+							.caro-wrap
+								width: 300px
+								right: 60px
+								bottom: 5%
+					&.news-amar
+						.prom1
+							overflow: hidden
+							img
+								&.main
+									width: 120%
+							h3
+								font-size: 18px
+							p
+								font-size: 9pt
+
+	@media #{$asc-max-1620}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						article
+							height: 20%
+							width: 15%
+							.caro-wrap
+								width: 45%
+								h2
+									font-size: 10pt
+								h3
+									font-size: 9pt
+	@media #{$asc-lap-02}
+		body
+			.amc-parallax
+				div[class*="para"],
+				div[class^="para"]
+					.full-lay
+	@media #{$asc-max-1456}	
+		.defa-logo
+			width: 42% !important
+		.mini-logo
+			width: 40% !important
+		body
+			.amc_avatar_column
+				div[class*="col-"],
+				div[class^="col-"]
+					width: 33.33%
+			.amc_avatar_column
+				[class^="col-"],
+				[class*="col-"]
+					.img-wrap-vert
+						h1,
+						h2,
+						h3,
+						h4,
+						h5,
+						h6,
+						p
+						img
+						&:hover
+							h1,
+							h2,
+							h3,
+							h4,
+							h5,
+							h6,
+							p
+								left: 0
+								opacity: 1
+								padding: 5px 10px 12px 30px
+								position: absolute
+								text-align: right
+								left: 0
+								color: #555
+								font-weight: bold
+								background-color: rgba(white, 0.69)
+								width: auto
+								bottom: 50px
+							p
+								padding: 3px 10px
+								width: 90%
+								bottom: 20px
+								color: #fff
+								font-weight: normal
+								background-color: map-get($amaris-color-hot, 2)
+							.content
+								height: 90%
+								p
+									line-height: 1.15
+									font-size: 12pt
+									background-color: transparent
+									bottom: auto
+									text-align: justify
+			header
+				.sect-amar
+					ul
+						li
+							&:hover
+								label
+									font-size: 7pt
+			.body-content
+				section
+					&.abou-amar
+						article
+							.caro-wrap
+								h2
+								
+								h3
+									font-size: 11pt
+					&.news-amar
+						.prom1
+							img
+								&.main
+									width: 150%
+							h3
+								font-size: 14px
+							p
+								font-size: 8pt
+	@media #{$asc-max-1366}
+		body
+			.body-content
+			.menu-left
+				> ul
+					height: 80%
+					overflow-y: scroll
+		.amc-parallax
+			div[class^="para"],
+			div[class*="para"]
+
+				&.heigher
+
+				div[class^="anim-"],
+				div[class*="anim-"]
+
+				.full-lay
+
+				.half-lay
+
+					&.left
+
+						&.cent-wrap
+
+						&.text-wrap
+
+					&.right
+
+						&.cent-wrap
+
+						&.text-wrap
+
+					.img-wrap
+
+						img
+
+					hr
+
+						&:first-child
+
+					p
+						font-size: 9pt
+
+				article
+
+					h2
+	@media #{$asc-max-1200}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						article
+					&.abou-amar
+						article
+	@media #{$asc-lap-01}
+		body
+			.mobi-landing
+				.amc_landing
+					.link-main
+						.img-wrap
+							padding-top: 36%
+			.amc-parallax
+				div[class*="para"],
+				div[class^="para"]
+					height: 115vh
+					.half-lay
+						&.left
+							left: 30px
+						&.right
+							right: 30px
+			.body-content
+				section
+					&.prom1
+						p
+							font-size: 8pt !important
+						.left-layo,
+						.righ-layo
+							.down-btn
+								bottom: 69px
+			.menu-left
+				ul
+					&.lv-01
+						>li
+							margin-top: 11px
+							margin-bottom: 11px
+							&.md-high
+								margin-top: 0
+							&.ex-high
+								margin-top: 67px
+			header
+				.head-wrap
+					.top-head
+						height: 72px
+			.cont-form
+				height: 580px
+				overflow-y: scroll
+	 @media #{$asc-lap-03}
+		body
+			.amc-parallax
+				div[class*="para"],
+				div[class^="para"]
+					.half-lay
+						&.left
+							p
+								font-size: 9.5pt
+						&.right
+							p
+								font-size: 9.5pt
+	@media #{$asc-max-1172}
+		body
+			.amc_avatar_column
+				div[class*="col-"],
+				div[class^="col-"]
+					width: 50%
+	@media #{$asc-min-1046-max-1256}
+		body
+			.mobi-landing
+				.amc_landing
+					.left-main
+						h2
+							font-size: 48pt
+			.detail-article
+				.titl-head
+					.info-head
+						position: relative
+						-ms-transform: translateX(0) translateY(0)
+						-webkit-transform: translate(0,0)
+						transform: translate(0, 0)
+						top: 0
+						left: 0
+						color: #000
+						h3
+							font-size: 48pt
+						h3,
+						h4,
+						nav
+							float: none
+							text-align: center
+						nav
+							a
+								color: #000
+			.body-content
+				section
+					&.mobi-oran
+						// height: 78vh
+	@media #{$asc-max-1045}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 66.6666666667vh
+					&.mobi-landing
+						height: auto
+						.amc_landing
+							position: relative
+							bottom: inherit
+							top: 80px
+							div[class*="col-"],
+							div[class^="col-"]
+								width: 100%
+							.left-main
+								h2
+							.link-main
+						footer
+							position: relative
+							top: 100px
+	@media #{$asc-max-1024}
+		html
+			width: 100% !important
+		body
+			.amc-land-srll
+				float: none
+				width: auto !important
+				.item-land-srll
+					float: none
+					.img-wrap-cent
+						width: 100%
+						height: 50%
+					.wrap-item
+						.left-corner
+							display: none
+						article
+							height: 50%
+							width: calc(100% - 100px)
+							left: 50px
+							margin: 0 auto
+							&.left
+								left: 0
+							.aside
+								width: calc(100% - 500px)
+								h2
+									padding-top: 0
+									font-size: 22pt
+			.body-content
+				section
+					&.mobi-oran 
+		.set-columns
+			-webkit-column-count: 2
+			-moz-column-count: 2
+			column-count: 2
+		.set-float-columns
+			figure
+				width: 50%
+		.for-desk
+			display: none
+		.defa-logo
+			width: 50% !important
+		.mini-logo
+			width: 48% !important
+		body
+			// .nav-btn
+			// 	position: fixed
+			// 	width: 80px
+			// 	height: 80px
+			// 	background-color: transparent
+			// 	color: map-get($amaris-color-hot,2)
+			// 	font-size: 20pt
+			// 	top: 0
+			// 	&.acti-hove
+			// 		width: auto
+			// 		right: 15px
+			// 		height: 60px
+			// 		margin-top: 10px
+			// 		padding-left: 10px
+			// 		padding-right: 10px
+			// 		i
+			// 			padding: 10px 0
+			// 			float: left
+			// 			cursor: pointer
+			.menu-left
+				> ul
+					height: 60%
+					overflow-y: scroll
+					> li
+						&.md-high
+							margin-top: auto !important
+						&.ex-high
+							margin-top: auto !important
+			header
+				.sect-amar
+					background-color: transparent
+					ul
+						li
+							a
+								label
+									margin-top: 0
+							&:hover
+								label
+									font-size: 11pt
+									font-family: map-get($amaris-font-museo, 1)
+									left: 15%
+
+					&.abou-us
+						ul
+							overflow-y: scroll
+	    					overflow-x: hidden
+							li
+								padding: 0 0
+								width: 100% !important
+								border-bottom: 1px solid map-get($amaris-color-dark,2)
+								background-color: rgba(69,69,71,0.95)
+					&.icon-menu
+						overflow: visible
+						background: none
+						margin-top: -2000px
+						top: -2000px
+						ul
+							padding-left: 0
+							padding-right: 0
+							overflow-y: scroll
+							overflow-x: hidden
+							li
+								background-color: rgba(69, 69, 71, 0.8)
+								border-bottom: 1px solid map-get($amaris-color-dark,2)
+								width: 100% !important
+								a
+									background-size: 10%
+									background-position: left center
+									position: relative
+									label
+										position: absolute
+										left: 15%
+										top: 40%
+										color: #fff
+										display: block
+								&:hover
+									label
+										text-align: left
+			.body-content
+				section
+					&.mobi-oran
+						article
+					&.abou-amar
+						article
+							// width: 50%
+							// height: 55%
+							.caro-wrap
+								h3
+									margin-left: 5%
+					&.map-amar
+						#vmap
+							svg
+								margin-left: 0
+					&.prom-amar
+						h2
+	@media #{$asc-min-769-max-1023}
+		.defa-logo
+			width: 42% !important
+	@media #{$asc-min-770-max-990}
+		body
+			.body-content
+				section
+					&.perc-amar
+						.container
+							.incr-numb
+								p
+									font-size: 48pt
+								h4
+									font-size: 20pt
+	@media #{$asc-max-992}
+	@media #{$asc-max-910}
+	@media #{$asc-max-880}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 48vh
+	@media #{$asc-max-850}
+		body
+			.amc_avatar_column
+				div[class*="col-"],
+				div[class^="col-"]
+					width: 100%
+			.container-small
+				width: 100%
+			.amc_scrolling_dot
+				.dot-form
+					article
+						position: relative
+						top: auto
+						right: auto
+						margin: 0 auto
+						padding: 60px 0
+						p
+					.dot-line
+						display: none
+						.dot
+							&.active
+					.left,
+					.right
+						width: 100%
+						article
+							position: relative
+							left: auto
+							top: auto
+							right: auto
+							margin: 0 auto
+			.body-content
+				section
+					&.mobi-oran
+						article
+
+	@media #{$asc-max-768}
+		body
+			.container-small
+				width: 100%
+			.amc-parallax
+				.block
+					.half-lay
+						&.left
+							img
+						&.right
+							article
+								width: 90%
+			.amc-land-srll
+				.item-land-srll
+					.img-wrap-cent
+					.wrap-item
+						padding: 15px
+						.left-corner
+							display: none
+						article
+							height: 50%
+							width: 100%
+							left: 0
+							margin: 0 auto
+							.aside
+								padding-left: 15px
+								padding-right: 15px
+								width: 100%
+								h2
+									padding-top: 0
+									font-size: 22pt
+			.amc-parallax
+				div[class*="para"],
+				div[class^="para"]
+					height: auto
+					padding-bottom: 1.5em
+					.half-lay
+						width: 100%
+						height: auto
+						left: 0 !important
+						right: 0 !important
+						width: 90%
+						position: relative !important
+						margin: 0 auto
+						top: inherit !important
+						overflow: hidden
+						&.left
+							-ms-transform: translateX(0) translateY(0) !important
+							-webkit-transform: translate(0,0) !important
+							transform: translate(0, 0) !important
+						&.right
+							-ms-transform: translateX(0) translateY(0) !important
+							-webkit-transform: translate(0,0) !important
+							transform: translate(0, 0) !important
+						hr
+							margin: 1.5em 0
+							width: 100%
+			.body-content
+				section
+					&.mobi-oran
+						// height: 48vh
+		.set-widt-mngr
+			width: 600px
+		.mngr-intr
+			.img-wrap
+				width: 141px		
+				img
+			.txt-wrap
+				width: 459px
+				height: auto
+				.txt-wrap-p
+					p
+						position: relative
+						top: 0
+						transform: translate(0, 0);
+		.img-wrap-sm
+			width: 100%
+			img
+				width: 100%
+		.defa-logo
+			width: 50% !important
+		.mini-logo
+			width: 48% !important
+		body					
+			header
+				.head-wrap
+					.top-head
+						height: 72px
+				.sect-amar
+					&.abou-us
+						ul
+							li
+								padding: 0 0
+			.body-content
+				section
+					&.mobi-oran,
+					&.abou-amar
+						background-position-y: 0
+						article
+							// width: 60%
+							// height: 60%
+					&.prom-amar
+						h2
+							width: 300px
+							font-size: 10pt
+							text-align: center
+					&.valu-01
+						img
+							width: 100%
+					&.perc-amar
+						.container
+							.incr-numb
+								h4
+									font-size: 20pt
+								p
+									font-size: 50pt
+	@media #{$asc-max-767}
+		.defa-logo
+			width: 27% !important
+		.mini-logo
+			width: 25% !important
+		.titl-arti
+			padding-top: 20px
+		.set-marg-bott
+			margin-bottom: 10px
+		body
+			.body-content
+				section
+					&.mobi-oran,
+					&.abou-amar
+						background-position-y: 0
+						article
+	@media #{$asc-max-755}						
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 33.3333333333vh
+	@media #{$asc-max-736}
+		.set-columns
+			-webkit-column-count: 1
+			-moz-column-count: 1
+			column-count: 1
+		.set-float-columns
+			figure
+				float: left
+				width: 100%
+		.set-widt-mngr
+			text-align: justify
+			margin: 0 auto
+			width: 600px
+		.defa-logo
+			width: 30% !important
+		.mini-logo
+			width: 28% !important
+		.cont-form
+			width: 600px !important
+		.for-desk-and-tabl
+			display: none !important
+		.navi-move
+			margin-top: -430px !important
+		.vert-menu
+			> ul
+				overflow-y: scroll
+				width: 100%
+				position: absolute
+				right: 0
+				li
+					background-color: rgba(69, 69, 71, 0.8)
+					float: left
+					height: auto !important
+					width: 100%
+					border-bottom: 1px solid map-get($amaris-color-dark,2)
+					a
+						span
+							
+							text-align: left
+		.set-bord-bott
+			padding-bottom: 15%;
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 30vh
+					&.gall-amar
+						.container
+							.caro-wrap-01
+								&.maxtaSLD
+									height: auto !important
+					.prom1
+						> img
+							display: none
+						.left-layo
+							background-color: map-get($amaris-color-dark,1)
+						.righ-layo
+							background-color: map-get($amaris-color-hot,2)
+
+	@media #{$asc-max-568}
+		body
+			.amc-parallax
+					div[class*="para"],
+					div[class^="para"]
+						
+		.set-widt-mngr
+			width: 400px
+			.img-wrap
+				margin: 0 auto
+				float: none
+			.txt-wrap
+				padding-left: 0
+				padding-top: 20px
+		.mngr-intr
+			.img-wrap
+				width: 94px		
+				img
+			.txt-wrap
+				width: 382px
+		.cont-form
+			width: 500px !important
+		body
+			header
+				.head-wrap
+					.top-head
+						.logo-amar
+							a
+								
+			.body-content
+				section
+					&.abou-amar
+						article
+							.caro-wrap
+								h3
+									font-size: 0.8em
+									margin-left: 70%
+									width: 140px
+					&.perc-amar
+						.container
+							.incr-numb
+								h4
+									font-size: 30pt
+								p
+									font-size: 72pt
+	@media #{$asc-max-425}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 36vh
+	@media #{$asc-max-414}
+		.set-widt-mngr
+			width: 100%
+		.mngr-intr
+			.set-bord-bott-line
+				border: none
+			.img-wrap
+				width: 100%		
+				img
+			.txt-wrap
+				width: 100%
+				padding: 0 30px
+				h3
+					margin-top: 15px
+					margin-bottom: 15px
+		.set-marg-bott-res
+			margin-bottom: 20px
+		.set-bala-vert
+			padding-bottom: 100px
+		.move-ltr
+			margin-left: 0 !important;
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 20vh
+			// .menu-btn,
+			// .nav-btn
+			// 	&.acti-hove
+			// 		margin-top: 5px
+			// 		i
+			// 			font-size: 10pt
+			// 		span,
+			// 		label
+			// 			font-size: 15pt
+			header
+				.head-wrap
+					.top-head
+						.logo-amar
+							a
+								margin-top: 15px
+		.cont-form
+			width: 300px !important
+			height: auto
+		.col-xxs-full
+			width: 100%
+		.soci-mobile
+			ul
+				margin-left: 0 !important
+				li
+					a
+						width: 40px
+						height: 40px
+						img
+							width: 100%
+	@media #{$asc-max-375}
+		.soci-mobile
+			ul
+				margin-left: 0 !important
+				li
+					a
+						width: 36px
+						height: 36px
+						img
+	@media #{$asc-max-360}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						// height: 26vh
+	@media #{$asc-max-320}
+		.mngr-intr
+			.img-wrap
+			.txt-wrap
+				height: auto
+				.txt-wrap-p
+					height: auto
+
+		.soci-mobile
+			ul
+				margin-left: 0 !important
+				li
+					a
+						width: 30px
+						height: 30px
+						img
+		body
+			.menu-btn
+				&.acti-hove
+					margin-left: 0
+					padding-left: 0
+			header
+				.head-wrap
+					.top-head
+						.only-righ
+							margin-left: auto
+							margin-right: auto
+							left: 0
+							right: 0
+							top: 80px
+							float: none
+							position: absolute
+
+	@media #{$asc-max-90em}
+		.amc-parallax
+			div[class*="para"],
+			div[class^="para"]
+				.half-lay
+					&.left
+					&.right
+						hr
+					article
+						p
+				.full-lay
+					p
+
+	@media #{$asc-max-87_5em}
+		.amc-parallax
+			div[class*="para"],
+			div[class^="para"]
+				article
+					p
+
+
+
+
+
+
+
+					

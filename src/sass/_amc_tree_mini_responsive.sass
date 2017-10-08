@@ -1,0 +1,79 @@
+@import map-get
+@import responsive_for_all
++exports("amc_tree_mini_responsive")
+	// Large Screen
+	@media #{$amc-max-2560}
+	@media #{$amc-max-2560-landscape}
+	@media #{$amc-max-2560-portrait}
+	
+	@media #{$amc-max-1920}
+	@media #{$amc-max-1920-landscape}
+	@media #{$amc-max-1920-portrait}
+	
+	@media #{$amc-max-1600}
+	@media #{$amc-max-1600-landscape}
+	@media #{$amc-max-1600-portrait}
+	// Medium Screen
+	@media #{$amc-max-1366}
+	@media #{$amc-max-1366-landscape}
+	@media #{$amc-max-1366-portrait}
+	
+	@media #{$amc-min-1024}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						.block
+							height: 100%
+							.img-wrap-cent
+								img
+									display: none
+	@media #{$amc-max-1024}
+	@media #{$amc-max-1024-landscape}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						height: 100vh
+						.block
+							height: 100%
+							.img-wrap-cent
+								img
+									display: none
+			.mobi-oran
+				.corner
+					top: 72px
+	@media #{$amc-max-1024-portrait}
+		body
+			.body-content
+				section
+					&.mobi-oran
+						height: 50vh
+						.block
+							height: 100%
+							.img-wrap-cent
+								img
+									display: none
+			.mobi-oran
+				.corner
+					top: 72px
+	// Small Screen
+	@media #{$amc-max-768}
+	@media #{$amc-max-768-landscape}
+	@media #{$amc-max-768-portrait}
+
+	@media #{$amc-max-568}
+	@media #{$amc-max-568-landscape}
+	@media #{$amc-max-568-portrait}
+	// extra small Screen
+	@media #{$amc-max-320}
+	@media #{$amc-max-320-landscape}
+	@media #{$amc-max-320-portrait}
+
+
+
+
+
+
+
+					

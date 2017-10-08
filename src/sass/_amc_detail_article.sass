@@ -1,0 +1,167 @@
+@import map-get
+@import common
++exports("amc_detail_article")
+	.detail-article
+		margin: 0 auto
+		&.normal
+			.titl-head
+				.cover-img
+					position: relative
+					padding-top: 78px
+					// height: 675px
+					img
+						// @extend .god-center
+						// display: none
+				.info-head
+					position: relative
+					@extend .remove-cent
+					color: #000
+					margin-bottom: 10px
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6
+						margin: 15px 0
+					h3
+						font-size: 20pt
+						
+						text-transform: none
+					h3,
+					h4,
+					nav
+						float: none
+					nav
+						margin-top: 0
+						@extend .clear-float
+						a
+							color: #e3e3e3
+							padding-left: 0
+							width: 48px
+							height: 45px
+							display: block
+							float: left
+							img
+								width: 100%
+							&:first-child
+								i
+									border: none
+									font-size: 20pt
+							i
+								width: 30px
+								height: 30px
+								border: 2px solid
+								border-radius: 50%
+								padding: 0
+								text-align: center
+								line-height: 1.7
+							span
+								margin-left: 5px
+							&.fb
+
+							&.tw
+
+							&.li
+
+							&.go
+
+					.right
+						position: absolute
+						right: 0
+						top: 0
+		.titl-head
+			position: relative
+			img
+				@extend .img-wrap
+		.main-content
+			padding: 30px
+			max-width: 770px
+			margin: 0 auto
+			background-color: #fff
+			a
+				color: map-get($amaris-color-hot,1)
+				&:hover
+					text-decoration: underline
+			.info-head
+				.wrap-title
+					width: 100%
+					padding-bottom: 0
+					padding-top: 40px
+					@extend .clear-float
+					h1,
+					h2,
+					h3,
+					h4,
+					h5,
+					h6
+						text-align: left
+						padding-bottom: 20px
+						margin-bottom: 0
+						color: map-get($amaris-color-hot,1)
+					h2
+						font-size: 38px
+					h3
+						margin-top: 0
+						text-transform: uppercase
+					h4
+						margin-top: 0
+						font-size: 10pt
+					.wrap-date
+						*
+							color: #555
+				.wrap-nav
+					width: 100%
+					@extend .clear-float
+					nav
+						float: right
+						a
+							color: #fff
+							font-size: 12pt
+							text-decoration: none
+							display: block
+							width: 60px
+							height: 56px
+							float: left
+							overflow: hidden
+							position: relative
+							i
+								padding-right: 10px
+							img
+								width: 100% !important
+								@extend .transition-effect
+								position: absolute
+								top: 0
+							&:hover
+								img
+									position: absolute
+									top: -56px
+			ul
+				li
+					list-style-type: disc
+			&.full
+				max-width: 100%
+			p
+				&.lead
+					font-size: 24px
+					line-height: 36px
+					color: map-get($amaris-color-dark,5)
+				font-weight: normal
+				line-height: 31px
+				font-size: 15px
+				color: #555
+			label
+				
+			.attach-file
+				text-decoration: none
+				padding: 5px 15px
+				color: map-get($amaris-color-hot,1)
+				background-color: map-get($amaris-color-dark,5)
+				
+				font-size: 10pt
+				border: 3px solid map-get($amaris-color-hot,1)
+				@extend .transition-effect
+				&:hover
+					background-color: transparent
+					border: 3px solid map-get($amaris-color-hot,1)
+					color: map-get($amaris-color-hot,1)

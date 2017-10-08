@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Dekar';
+  src: url('Dekar.eot');
+  src: url('Dekar.woff2') format('woff2'),
+       url('Dekar.woff') format('woff'),
+       url('Dekar.ttf') format('truetype'),
+       url('Dekar.svg#Dekar') format('svg'),
+       url('Dekar.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

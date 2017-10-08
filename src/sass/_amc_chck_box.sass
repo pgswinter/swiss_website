@@ -1,0 +1,32 @@
+@import functions
+@import map-get
+@import common
++exports("amc_chck_box")	
+	.chck-box
+		.chck-lbl
+			width: 100%
+			.node
+				width: 20px
+				height: 20px
+				border: 3px solid map-get($amaris-color-dark,2)
+				background-color: map-get($amaris-color-dark,1)
+				cursor: pointer
+				margin-bottom: 5px
+				float: left
+				@extend .transition-effect;
+			i
+				opacity: 0
+				visibility: hidden
+				float: left
+			label
+				float: left
+				margin-left: 15px
+			&.active
+				.node
+					background-color: map-get($amaris-color-hot,2)
+					border: 3px solid map-get($amaris-color-hot,2)
+				i
+					color: map-get($amaris-color-dark,1)
+					display: block
+					opacity: 1
+					visibility: visible

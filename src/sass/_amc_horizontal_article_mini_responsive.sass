@@ -1,0 +1,95 @@
+@import map-get
+@import responsive_for_all
++exports("amc_animate_article_mini_responsive")
+	// Large Screen
+	@media #{$amc-max-2560}
+	@media #{$amc-max-2560-landscape}
+	@media #{$amc-max-2560-portrait}
+	
+	@media #{$amc-max-1920}
+	@media #{$amc-max-1920-landscape}
+	@media #{$amc-max-1920-portrait}
+	
+	@media #{$amc-max-1600}
+	@media #{$amc-max-1600-landscape}
+	@media #{$amc-max-1600-portrait}
+	// Medium Screen
+	@media #{$amc-max-1366}
+	@media #{$amc-max-1366-landscape}
+	@media #{$amc-max-1366-portrait}
+
+	@media #{$amc-min-1025}
+	@media #{$amc-max-1024}
+		.amc_horizontal_article
+			.block-text
+				float: none
+				margin: 0 auto
+				width: 320px
+				height: 320px
+				&:hover
+					.bg-img
+						position: absolute
+						height: 320px
+						width: 320px
+						z-index: 1
+						background-color: white
+					article
+						opacity: 1
+					span
+				&:last-child
+					&:hover
+						.bg-img
+							position: absolute
+							height: 320px
+							width: 320px
+							z-index: 1
+							background-color: white
+							transform: translateX(0);
+	@media #{$amc-max-1024-landscape}
+	@media #{$amc-max-1024-portrait}
+
+	// Small Screen
+	@media #{$amc-max-768}
+	@media #{$amc-max-768-landscape}
+	@media #{$amc-max-768-portrait}
+
+	@media #{$amc-max-568}
+	@media #{$amc-max-568-landscape}
+	@media #{$amc-max-568-portrait}
+	// extra small Screen
+	@media #{$amc-max-320}
+		.amc_horizontal_article
+			.block-text
+				float: none
+				margin: 0 auto
+				width: 100%
+				height: 320px
+				&:hover
+					.bg-img
+						position: absolute
+						height: 320px
+						width: 100%
+						z-index: 1
+						background-color: white
+					article
+						opacity: 1
+					span
+				&:last-child
+					&:hover
+						.bg-img
+							position: absolute
+							height: 320px
+							width: 100%
+							z-index: 1
+							background-color: white
+							transform: translateX(0);
+	@media #{$amc-max-320-landscape}
+	@media #{$amc-max-320-portrait}
+
+
+
+
+
+
+
+					

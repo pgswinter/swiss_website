@@ -1,0 +1,75 @@
+@import map-get
+@import common
++exports("amc_drop_down")
+	.selectbox
+		position: relative
+		padding-left: 0
+		padding-right: 0
+		.bar
+			padding: 15px 20px
+			background-color: #fff
+			color: #fff
+			display: inline-block
+			width: calc(100% - 50.67px)
+			float: left
+			border-top-left-radius: 5px
+			border-left: 1px solid map-get($amaris-color-dark,3)
+			border-right: 1px solid map-get($amaris-color-dark,3)
+			border-top:  1px solid map-get($amaris-color-dark,3)
+			border-bottom:  1px solid map-get($amaris-color-dark,3)
+			.item-wrapper
+				
+				color: map-get($amaris-color-dark,2)
+		.expa-btn
+			padding: 15px 20px 17px 20px
+			background-color: map-get($amaris-color-dark,3)
+			border-left: 1px solid #cdcdcd
+			color: map-get($amaris-color-dark,1)
+			font-size: 14pt
+			width: 50.67px
+			cursor: pointer
+			border-top-right-radius: 5px
+			border-top:  1px solid map-get($amaris-color-dark,3)
+			border-bottom:  1px solid map-get($amaris-color-dark,3)
+			color: map-get($amaris-color-dark,2)
+		.list-item
+			position: absolute
+			z-index: 3
+			width: 100%
+			li
+				padding: 10px 0
+				border-top: 1px solid #cdcdcd
+				border-left: 1px solid #cdcdcd
+				border-right: 1px solid #cdcdcd
+				text-indent: 15px
+				background-color: #fff
+				margin: 0
+				display: list-item
+				width: 100%
+				cursor: pointer
+				.item-wrapper
+					color: #8b8c90
+					
+				&:first-child
+					border-top: 1px solid #cdcdcd
+				&:last-child
+					border-bottom-left-radius: 5px
+					border-bottom-right-radius: 5px
+					border-bottom: 1px solid #cdcdcd
+		&.dark-vers
+			.bar
+				background-color: map-get($amaris-color-dark,1)
+				border-radius: 0
+				border: none
+				.item-wrapper
+					color: #fff
+			.expa-btn
+				background-color: map-get($amaris-color-dark,1)
+				border-radius: 0
+				border: none
+				border-left: 1px solid map-get($amaris-color-dark,2)
+			.list-item
+				li
+					background-color: map-get($amaris-color-dark,1)
+					border-radius: 0
+					border-top: 1px solid map-get($amaris-color-dark,2)

@@ -1,0 +1,30 @@
+@import map-get
+@import common
++exports("amc_landing")
+	.mobi-landing
+		height: 100vh
+		overflow: hidden
+		.amc_landing
+			@extend .clear-float
+			bottom: 200px
+			padding-left: 10%
+			padding-right: 10%
+			position: absolute
+			left: 0
+			.left-main
+				h2
+					color: #555
+					font-size: 72pt
+					font-weight: bold
+				p
+					font-size: 10pt
+					color: rgba(black, 0.6)
+			.link-main
+				position: relative
+				.img-wrap
+					width: 80%
+					margin: 0 auto
+				a
+					color: #fff
+					text-decoration: none
+					text-align: center

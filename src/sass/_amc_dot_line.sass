@@ -1,0 +1,145 @@
+@import map-get
+@import common
+@import amc_animation
++exports("amc_dot_line")
+	// .red-test
+	// 	position: fixed
+	// 	width: 50px
+	// 	height: 50px
+	// 	border-radius: 50%
+	// 	left: 10px
+	// 	top: 10px
+	// 	background-color: black
+	// 	z-index: 5
+	.amc_scrolling_dot
+		padding-bottom: 120px
+		@extend .clear-float
+		.dot-form
+			@extend .clear-float
+			article
+				position: absolute
+				width: 50%
+				.img-wrap
+					cursor: pointer
+				span
+					width: 100%
+					text-align: center
+					display: block
+					cursor: pointer
+					color: map-get($amaris-color-hot,1)
+					font-size: 11pt
+					font-weight: bold
+				.content
+					display: none
+					h2
+						width: 100%
+						text-align: center
+					p
+						text-align: justify
+			.dot-start
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				// background-color: map-get($amaris-color-hot,2)
+				background: url(../../favicon.ico) 0 0 no-repeat
+			.dot-line
+				.dot
+					width: 15px
+					height: 15px
+					border-radius: 50%
+					background-color: #e2e2e2
+					margin-bottom: 10px
+					&.active
+						background-color: map-get($amaris-color-hot,2)
+			.left
+				width: 50%
+				float: left
+				position: relative
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6
+					text-align: center
+				article
+					top: 15px
+					right: 220px
+				.dot-start
+					float: right
+				.dot-line
+					float: right
+					margin-top: 30px
+					margin-right: -5px
+					.dot
+						&:nth-child(1)
+							margin-left: -40px
+							// @extend .blind_dot1
+						&:nth-child(2)
+							margin-left: -55px
+							// @extend .blind_dot1
+						&:nth-child(3)
+							margin-left: -65px
+							// @extend .blind_dot1
+						&:nth-child(4)
+							margin-left: -75px
+							// @extend .blind_dot1
+						&:nth-child(5)
+							margin-left: -80px
+							// @extend .blind_dot1
+						&:nth-child(6)
+							margin-left: -80px
+							// @extend .blind_dot1
+						&:nth-child(7)
+							margin-left: -75px
+							// @extend .blind_dot1
+						&:nth-child(8)
+							margin-left: -65px
+							// @extend .blind_dot1
+						&:nth-child(9)
+							margin-left: -55px
+							// @extend .blind_dot1
+						&:nth-child(10)
+							margin-left: -40px
+							// @extend .blind_dot1
+			.right
+				width: 50%
+				float: right
+				position: relative
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6
+					text-align: center
+				.dot-start
+					margin-left: -20px
+				article
+					top: 15px
+					left: 120px
+				.dot-line
+					float: left
+					margin-top: 20px
+					margin-left: -24px
+					.dot
+						&:nth-child(1)
+							margin-left: 40px
+						&:nth-child(2)
+							margin-left: 55px
+						&:nth-child(3)
+							margin-left: 65px
+						&:nth-child(4)
+							margin-left: 75px
+						&:nth-child(5)
+							margin-left: 80px
+						&:nth-child(6)
+							margin-left: 80px
+						&:nth-child(7)
+							margin-left: 75px
+						&:nth-child(8)
+							margin-left: 65px
+						&:nth-child(9)
+							margin-left: 55px
+						&:nth-child(10)
+							margin-left: 40px
